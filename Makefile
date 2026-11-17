@@ -1,12 +1,16 @@
 SHELL := bash
 
 .PHONY: all \
-		fps fps-animation fps-frame fps-process fps-summary \
-		quality
+		fps fps-no-tamper-detection fps-animation fps-frame fps-process fps-summary \
+		quality \
+		clean
 
 all: fps quality
 
-fps: fps-animation fps-frame fps-process fps-summary
+fps: fps-no-tamper-detection fps-animation fps-frame fps-process fps-summary
+
+fps-no-tamper-detection:
+	py -m fps.plot_frames no_tamper_detection
 
 fps-animation:
 	py -m fps.plot_frames animation
@@ -22,3 +26,6 @@ fps-summary:
 
 quality:
 	py -m quality.plot
+
+clean:
+	rm -f fps/outputs/*.png quality/outputs/*.png
