@@ -4,10 +4,12 @@ import re
 import sys
 import pandas as pd
 import matplotlib.pyplot as plt
-from utils.path import FPS_ANIMATION, FPS_FRAME, FPS_PROCESS, FPS_OUTPUTS
+from utils.path import FPS_NO_TAMPER_DETECTION, FPS_ANIMATION, FPS_FRAME, FPS_PROCESS, FPS_OUTPUTS
 
 file = sys.argv[1]
 match file:
+    case "no_tamper_detection":
+          path = FPS_NO_TAMPER_DETECTION
     case "animation":
         path = FPS_ANIMATION
     case "frame":
