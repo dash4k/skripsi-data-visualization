@@ -2,6 +2,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+FPS_NO_TAMPER_DETECTION = BASE_DIR / "fps" / "data" / "frames_no_tamper_detection_*.csv"
 FPS_ANIMATION = BASE_DIR / "fps" / "data" / "frames_on_animation_changed_*.csv"
 FPS_FRAME = BASE_DIR / "fps" / "data" / "frames_on_frame_changed_*.csv"
 FPS_PROCESS = BASE_DIR / "fps" / "data" / "frames_on_process_*.csv"
