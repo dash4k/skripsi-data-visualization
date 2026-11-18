@@ -11,3 +11,6 @@ FPS_OUTPUTS = BASE_DIR / "fps" / "outputs"
 
 QUALITY = BASE_DIR / "quality" / "data" / "results_*.csv"
 QUALITY_OUTPUTS = BASE_DIR / "quality" / "outputs"
+
+PERFORMANCE = BASE_DIR / "performance" / "data" / "results_*.csv"
+PERFORMANCE_OUTPUTS = BASE_DIR / "performance" / "outputs"
