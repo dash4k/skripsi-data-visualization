@@ -4,7 +4,8 @@ SHELL := bash
 		fps fps-no-tamper-detection fps-animation fps-frame fps-process fps-summary \
 		quality \
 		performance \
-		clean
+		clean \
+		dashboard
 
 all: fps quality
 
@@ -33,3 +34,6 @@ performance:
 
 clean:
 	rm -f fps/outputs/*.png quality/outputs/*.png
+
+dashboard:
+	streamlit run dashboard.py
