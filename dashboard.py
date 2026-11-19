@@ -229,7 +229,7 @@ with tab_perf:
 
             best = g["avg_fps"].idxmax()
             k1, k2, k3 = st.columns(3)
-            k1.metric("Fastest config", best)
+            k1.metric("Fastest Scheme", best)
             k2.metric("Best average FPS", f"{g['avg_fps'].max():.1f}")
             k3.metric("Best 1% low FPS", f"{g['low_1pct'].max():.1f}")
 
@@ -250,7 +250,7 @@ with tab_perf:
     with st.container(border=True):
         st.subheader("Run explorer")
         c1, c2 = st.columns([2, 1])
-        label = c1.selectbox("Run type", list(FPS_SOURCES.keys()))
+        label = c1.selectbox("Scheme", list(FPS_SOURCES.keys()))
         window_s = c2.slider("Window size (s)", 0.1, 5.0, 0.5, 0.1,
                              help="Frames are averaged over this window to smooth the line.")
 
