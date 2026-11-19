@@ -10,9 +10,9 @@ The repository includes a Streamlit dashboard plus standalone Matplotlib and Sea
 
 `dashboard.py` provides a Streamlit dashboard with three tabs:
 
-- **Performance** — FPS comparisons, run exploration, average FPS, 1% low FPS, and run consistency
-- **Quality** — PSNR and SSIM charts, distributions, and raw image-quality data
-- **Accuracy** — confusion matrix, accuracy, precision, recall, and F1 score
+- **Performance**: FPS comparisons, run exploration, average FPS, 1% low FPS, and run consistency
+- **Quality**: PSNR and SSIM charts, distributions, and raw image-quality data
+- **Accuracy**: confusion matrix, accuracy, precision, recall, and F1 score
 
 ### Command-line plots
 
